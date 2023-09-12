@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        table {
+            width: 900px;
+            height: 150px;
+            border: 1px solid black;
+            margin-top: 50px;
+        }
+
+        .dados_pessoais {
+            position: absolute;
+        }
+
+        .dados_de_endereco {
+            position: absolute;
+            margin-bottom: -50px;
+        }
+
+        .dados_de_login {
+            position: absolute;
+        }
+
+        .botao_enviar {
+            margin-top: 15px;
+        }
+
+        .botao_limpar {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Preencha o formulário abaixo</h3>
+
+    <div class="dados_pessoais">
+        <strong>
+            <p>Dados Pessoais</p>
+        </strong>
+    </div>
+
+    <table>
+        <tbody>
+            <form action="">
+                <tr>
+                   <td>Nome: <input type="text"> Sobrenome: <input type="text">
+                </tr>
+                <tr>
+                    <td>Nascimento: <input type="date"></td>
+                </tr>
+                <tr>
+                    <td>RG: <input type="number"></td>
+                </tr>
+                <tr>
+                    <td>CPF: <input type="number"></td>
+                </tr>
+            </form>
+            
+        </tbody>
+    </table>
+    
+    <div class="dados_de_endereco">
+        <strong>
+            <p>Dados de Endereço</p>
+        </strong>
+    </div>
+
+    <table>
+        <form action="">
+            <tr>
+                <td>Rua: <input type="text"> Número: <input type="number"></td>
+            </tr>
+            <tr>
+                <td>Bairro: <input type="text"></td>
+            </tr>
+            <tr>
+                <td>Estado: <select name="estados" id="estados_select">
+                    <option value="">-----------------</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Alagoas">Alagoas</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Cidade: <input type="text"></td>
+            </tr>
+            <tr>
+                <td>CEP: <input type="number"></td>
+            </tr>
+        </form>
+    </table>
+
+    <div class="dados_de_login">
+        <strong>
+            <p>Dados de Login</p>
+        </strong>
+    </div>
+
+    <table>
+        <form action="">
+            <tr>
+                <td>E-mail: <input type="text"></td>
+            </tr>
+            <tr>
+                <td>Imagem de Perfil: <button>Escolha Arquivo</button> Nennhum arquivo selecionado</td>
+            </tr>
+            <tr>
+              <td>Login do usuário: <input type="text"></td>
+            </tr>
+            <tr>
+                <td>Senha: <input type="password"></td>
+            </tr>
+            <tr>
+                <td>Confirmar Senha: <input type="password"></td>
+            </tr>
+        </form>
+    </table>
+
+    <button class="botao_enviar">Enviar</button>
+    <button class="botao_limpar">Limpar</button>
+</body>
+</html>
